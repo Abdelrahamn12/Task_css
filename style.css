@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Parent {
+    width: 1440px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+  }
+
+  .Pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .Pattern img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .show {
+      display: none;
+    }
+    .hidden {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hidden {
+      display: none;
+    }
+    .show {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    cursor: grab;
+  }
+
+  .Child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img img {
+    display: block;
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .summary {
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 10px 20px -5px hsl(224, 23%, 55%);
+  }
+
+  .box {
+    width: 300px;
+    margin: auto;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: hsl(223, 47%, 23%);
+    padding: 7px 0;
+  }
+
+  p {
+    color: hsl(224, 23%, 55%);
+  }
+
+  .music {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  h4 {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .change {
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .change:hover {
+    color: hsl(245, 65%, 70%);
+    text-decoration: none;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 10px;
+  }
+
+  .payment {
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 8px 20px hsl(224, 23%, 55%);
+  }
+
+  .payment:hover {
+    background-color: hsl(245, 65%, 70%);
+  }
+
+  .cancel {
+    padding: 10px;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+    background-color: transparent;
+  }
